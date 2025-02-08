@@ -18,10 +18,11 @@ include(Format)
 include(CppCheck)
 include(Doxygen)
 include(BuildInfo)
+# include(GetSpdlog)
+
+set(CMAKE_POSITION_INDEPENDENT_CODE TRUE)
 
 add_subdirectory(src)
-message("${CMAKE_BINARY_DIR}")
-
 
 ##########################################################################################
 # Builidng and packaging 
