@@ -1,5 +1,5 @@
 #include <iostream>
-#include <sibyl.hpp>
+#include <sibyl/sibyl.hpp>
 
 int main() {
   std::cout << sibyl::add(1, 2) << "\n";

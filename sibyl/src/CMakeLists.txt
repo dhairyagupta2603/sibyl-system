@@ -1,8 +1,6 @@
 add_subdirectory(spdlog)
-# file(GLOB_RECURSE SPDLOG_SOURCES "${CMAKE_CURRENT_SOURCE_DIR}/spdlog/src/*.cpp")
 
 add_library(sibyl SHARED 
-    # ${SPDLOG_SOURCES}
     sibyl.cpp
 )
 
@@ -30,7 +28,7 @@ set_target_properties(sibyl PROPERTIES
 install(TARGETS sibyl
     EXPORT sibylTargets
     LIBRARY DESTINATION lib
-    PUBLIC_HEADER DESTINATION include
+    PUBLIC_HEADER DESTINATION include/sibyl
 )
 
 # Create and install an export file
