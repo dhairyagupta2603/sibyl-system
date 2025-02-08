@@ -1,4 +1,5 @@
 add_subdirectory(spdlog)
+add_subdirectory(libevdev)
 
 add_library(sibyl SHARED 
     sibyl.cpp
@@ -9,6 +10,7 @@ target_include_directories(sibyl PUBLIC
     # During build
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>  
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/spdlog/include>  
+    $<BUILD_INTERFACE:${LIBEVDEV_INCLUDE_DIR}>  
 
     # After installation
     $<INSTALL_INTERFACE:include>                            

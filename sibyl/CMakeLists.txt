@@ -5,7 +5,7 @@ cmake_minimum_required(VERSION 3.26)
 project(
     Sibyl-System 
     DESCRIPTION "A linux library that logs all user actions to aggregate and analyze"
-    VERSION 0.0.1
+    VERSION 0.0.4
     LANGUAGES CXX
 )
 

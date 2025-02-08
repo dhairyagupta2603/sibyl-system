@@ -6,6 +6,8 @@ To install this software you'll need to provide the following:
 - Doxygen + Graphviz
 - CPPCheck
 - Valgrind
+- Autotools suite: autoconf automake libtool
+- Ninja
 
 This project also depends on GTest, GMock. This
 software is automatically pulled from external repositories
