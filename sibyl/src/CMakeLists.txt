@@ -5,6 +5,8 @@ add_library(sibyl SHARED
     sibyl.cpp
 )
 
+message("${LIBEVDEV_INCLUDE_DIR}")
+
 # Specify include directories
 target_include_directories(sibyl PUBLIC 
     # During build
@@ -17,7 +19,7 @@ target_include_directories(sibyl PUBLIC
 )
 
 # Link spdlog to the library
-target_link_libraries(sibyl PRIVATE spdlog::spdlog)
+target_link_libraries(sibyl PRIVATE spdlog::spdlog evdev)
 
 # Set the version for the library
 set_target_properties(sibyl PROPERTIES
